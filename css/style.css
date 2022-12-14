@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    overflow: hidden;
+    background: linear-gradient(to right, #f340ae, #304dee);
+    font-family: 'Poppins', sans-serif;
+}
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+}
+/*-------------------------------------------------------*/
+h1 {
+    position: relative;
+    top: 10;
+    left: 41.5%;
+    font-size: 40px;
+    margin: 5px;
+    color: aliceblue;
+    padding-top: 5px;
+}
+.calculator {
+    position: absolute;
+    /* height: 80%;
+    width: 30%; */
+    top: 10%;
+    left: 35%;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, .25);
+    border-radius: 4px;
+}
+button {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    padding: 25px;
+    background-color: rgb(176, 143, 202);
+    border: 1px solid rgb(255, 255, 255);
+}
+button:hover {
+    background-color: rgba(255, 255, 255, .8);
+    transition: all .3s;
+}
+.calc-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+.two-spaces {
+    grid-column: span 2;
+}
+.output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    height: 80px;
+}
+.output .previous-op {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+}
+.output .current-op {
+    color: rgba(255, 255, 255, .75);
+    font-size: 2.5rem;
+}
